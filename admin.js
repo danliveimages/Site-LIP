@@ -530,14 +530,14 @@ console.log("APOIO:", data);
         </p>
 
         ${
-    data.comprovante
+    data.arquivo
     ? `
     <div class="admin-image-box">
 
         <strong>Comprovante:</strong>
 
         <img
-            src="${data.comprovante}"
+            src="${data.arquivo}"
             alt="Comprovante enviado"
             class="admin-image"
         >
