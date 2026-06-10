@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Imagem Pix</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="hero-header">
+
+            <h1 class="rainbow-text">
+                Live Imagem Pix
+            </h1>
+
+            <div class="hero-description">
+
+                <p>
+                    Uma nova forma de interação entre criadores e espectadores
+                </p>
+
+                <p>
+                    Imagens enviadas por doações Pix durante transmissões ao vivo
+                </p>
+
+                <div class="hero-badges">
+
+                    <span class="hero-badge">
+                        Overlay
+                    </span>
+
+                    <span class="hero-badge">
+                        OBS
+                    </span>
+
+                    <span class="hero-badge">
+                        Multiplataforma
+                    </span>
+
+                    <span class="hero-badge">
+                        Moderação Prévia
+                    </span>
+
+                    <span class="hero-badge">
+                        Doações Pix
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- VIDEO DEMONSTRAÇÃO -->
+
+            <section class="video-demo-card">
+
+                <button
+                    id="videoToggle"
+                    class="video-demo-button">
+
+<div class="video-play-icon">
+
+    <svg
+        class="icon-play"
+        viewBox="0 0 24 24"
+    >
+
+        <path
+            d="M8 5v14l11-7z"
+            fill="currentColor"
+        />
+
+    </svg>
+
+    <svg
+        class="icon-close"
+        viewBox="0 0 24 24"
+    >
+
+        <path
+            d="M18 6L6 18M6 6l12 12"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+        />
+
+    </svg>
+
+</div>
+               
+                </button>
+
+                <div
+                    id="videoContent"
+                    class="video-demo-content">
+
+                    <video
+    id="demoVideo"
+    controls
+    controlsList="nodownload"
+    disablePictureInPicture
+>
+
+                        <source
+                            src="vidx.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                </div>
+
+            </section>
+
+        </header>
+
+        <!-- O QUE É -->
+
+        <section class="accordion-card">
+
+            <button class="accordion-header">
+
+                <div>
+
+                    <h2>
+                        O que é o Live Imagem Pix?
+                    </h2>
+
+                    <span>
+                        Conheça o projeto
+                    </span>
+
+                </div>
+
+                <span class="accordion-icon"></span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <p>
+O <strong>Live Imagem Pix</strong> permite que espectadores enviem imagens através de doações Pix durante transmissões ao vivo
+</p>
+
+<p>
+Após o envio, a imagem pode ser aprovada ou recusada por meio do sistema de moderação prévia. Quando aprovada, ela é exibida automaticamente no overlay da transmissão.
+</p>
+
+<ul class="feature-list">
+    <li>🖼️ Envio de imagens através de doações Pix</li>
+    <li>🛡️ Moderação e aprovação prévia das imagens</li>
+    <li>🎥 Overlay compatível com OBS Studio e outros softwares que suportam fontes de navegador</li>
+    <li>🌐 Compatível com Twitch, YouTube, TikTok, Kick e demais plataformas que utilizam overlays</li>
+</ul>
+
+            </div>
+
+        </section>
+
+        <!-- PARTICIPAR -->
+
+        <section class="accordion-card">
+
+            <button class="accordion-header">
+
+                <div>
+
+                    <h2>
+                        Participar
+                    </h2>
+
+                    <span>
+                        Faça parte do projeto - Atualmente gratuito para parceiros aprovados
+                    </span>
+
+                </div>
+
+                <span class="accordion-icon"></span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <form id="inscricaoForm" class="form">
+
+                    <input
+                        id="nome"
+                        type="text"
+                        placeholder="Nome"
+                        required>
+
+                    <input
+                        id="canal"
+                        type="text"
+                        placeholder="Nome do Canal"
+                        required>
+
+                    <select id="plataforma">
+
+                        <option>Twitch</option>
+                        <option>YouTube</option>
+                        <option>TikTok</option>
+                        <option>Kick</option>
+                        <option>Outra</option>
+
+                    </select>
+
+                    <input
+                        id="linkCanal"
+                        type="url"
+                        placeholder="Link do Canal"
+                        required>
+
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="E-mail"
+                        required>
+
+                    <input
+                        id="discord"
+                        type="text"
+                        placeholder="Discord (Opcional)">
+
+                    <textarea
+                        id="mensagem"
+                        placeholder="Mensagem (Opcional)"></textarea>
+
+                    <button type="submit">
+                        Enviar Solicitação
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- PARCEIROS -->
+
+        <section class="accordion-card">
+
+            <button class="accordion-header">
+
+                <div>
+
+                    <h2>
+                        Parceiros
+                    </h2>
+
+                    <span>
+                        Criadores participantes
+                    </span>
+
+                </div>
+
+                <span class="accordion-icon"></span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <div class="partners-grid">
+
+                    <div class="partner-card">
+
+                        <img
+                            src="perfilparceiro0.png"
+                            alt="Parceiro">
+
+                        <h3>
+                            Seu Nickname
+                        </h3>
+
+                        <p>
+                            Parceiro #001
+                        </p>
+
+                        <a href="#">
+                            Visitar Canal
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- APOIAR -->
+
+<section class="accordion-card">
+
+    <button class="accordion-header">
+
+        <div>
+
+            <h2>
+                Apoiar
+            </h2>
+
+            <span>
+                Ajude no desenvolvimento
+            </span>
+
+        </div>
+
+        <span class="accordion-icon"></span>
+
+    </button>
+
+    <div class="accordion-content">
+
+        <div class="pix-box">
+
+            <img
+    src="pix-qrcode.png"
+    alt="QR Code Pix"
+>
+
+            <input
+    id="pixKey"
+    type="text"
+    value="d5d7dc22-155f-45ee-8e1f-cdc8433bd8b3"
+    readonly
+>
+
+            <button id="copyPixButton">
+                Copiar Chave Pix
+            </button>
+
+            <input
+                type="text"
+                id="apoioNome"
+                placeholder="Nome ou apelido (opcional)"
+            >
+
+            <textarea
+    id="apoioMensagem"
+    placeholder="Deixe uma mensagem (opcional)"
+    rows="3"
+></textarea>
+
+            <input
+                type="file"
+                id="apoioComprovante"
+                accept="image/*,.pdf"
+            >
+
+            <button id="doeiButton">
+                ❤️ Doei
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- SUGESTÕES -->
+
+        <section class="accordion-card">
+
+            <button class="accordion-header">
+
+                <div>
+
+                    <h2>
+                        Sugestões
+                    </h2>
+
+                    <span>
+                        Envie ideias para o projeto
+                    </span>
+
+                </div>
+
+                <span class="accordion-icon"></span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <form id="sugestaoForm" class="form">
+
+                    <input
+                        id="sugestaoNome"
+                        type="text"
+                        placeholder="Nome (Opcional)">
+
+                    <textarea
+                        id="sugestaoTexto"
+                        placeholder="Sua sugestão"
+                        required></textarea>
+
+                    <input
+                        id="sugestaoImagem"
+                        type="file"
+                        accept="image/*">
+
+                    <button type="submit">
+                        Enviar Sugestão
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- BUGS -->
+
+        <section class="accordion-card">
+
+            <button class="accordion-header">
+
+                <div>
+
+                    <h2>
+                        Reportar Bug
+                    </h2>
+
+                    <span>
+                        Ajude a melhorar o projeto
+                    </span>
+
+                </div>
+
+                <span class="accordion-icon"></span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <form id="bugForm" class="form">
+
+                    <select id="bugTipo">
+
+                        <option>
+                            Sou parceiro
+                        </option>
+
+                        <option>
+                            Sou telespectador
+                        </option>
+
+                    </select>
+
+                    <input
+                        id="bugNome"
+                        type="text"
+                        placeholder="Nome">
+
+                    <textarea
+                        id="bugDescricao"
+                        placeholder="Descreva o problema"
+                        required></textarea>
+
+                    <input
+                        id="bugImagem"
+                        type="file"
+                        accept="image/*">
+
+                    <button type="submit">
+                        Enviar Relatório
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
+
+<!-- RODAPÉ -->
+<div class="footer">
+
+    <p>
+        Live Imagem
+    </p>
+
+    <p>
+        by Daniel Lima
+    </p>
+
+</div>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Admin • Live Imagem Pix
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+
+</head>
+
+<body>
+
+<div id="loginScreen" class="login-screen">
+
+    <div class="login-card">
+
+        <h1 class="login-logo">
+            LIP
+        </h1>
+
+        <input
+            type="email"
+            id="loginEmail"
+            placeholder="Email"
+        >
+
+        <input
+            type="password"
+            id="loginSenha"
+            placeholder="Senha"
+        >
+
+        <button id="loginButton">
+            Entrar
+        </button>
+
+        <p id="loginError"></p>
+
+    </div>
+
+</div>
+
+<div id="adminPanel" style="display:none;">
+
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h1 class="logo">
+    LIP
+</h1>
+
+        <button
+            class="tab active"
+            data-tab="inscricoes"
+        >
+            Inscrições
+        </button>
+
+        <button
+            class="tab"
+            data-tab="apoios"
+        >
+            Apoios
+        </button>
+
+        <button
+            class="tab"
+            data-tab="sugestoes"
+        >
+            Sugestões
+        </button>
+
+        <button
+            class="tab"
+            data-tab="bugs"
+        >
+            Bugs
+        </button>
+
+<div class="sidebar-footer">
+
+    <button id="logoutButton">
+
+        Sair
+
+    </button>
+
+</div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+    <div class="filter-box">
+
+    <div class="customFilter">
+
+        <button
+            id="filterButton"
+            class="filterButton"
+        >
+
+            <span id="selectedFilter">
+                Todos
+            </span>
+
+            <span class="filterArrow">
+                ▼
+            </span>
+
+        </button>
+
+        <div
+            id="filterDropdown"
+            class="filterDropdown"
+        >
+
+            <div
+                class="filterOption"
+                data-value="todos"
+            >
+                Todos
+            </div>
+
+            <div
+    class="filterOption"
+    data-value="novo"
+>
+    <span class="status-dot novo"></span>
+    Novo
+</div>
+
+            <div
+                class="filterOption"
+                data-value="analise"
+            >
+                <span class="status-dot analise"></span>
+Em análise
+            </div>
+
+            <div
+                class="filterOption"
+                data-value="desenvolvimento"
+            >
+                <span class="status-dot desenvolvimento"></span>
+Em desenvolvimento
+            </div>
+
+            <div
+                class="filterOption"
+                data-value="concluido"
+            >
+                <span class="status-dot concluido"></span>
+Concluído
+            </div>
+
+<div
+    class="filterOption"
+    data-value="aprovado"
+>
+    <span class="status-dot aprovado"></span>
+    Aprovado
+</div>
+
+            <div
+                class="filterOption"
+                data-value="recusado"
+            >
+                <span class="status-dot recusado"></span>
+Recusado
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+        <div id="content">
+
+        </div>
+
+    </main>
+
+</div>
+
+<script
+    type="module"
+    src="admin.js"
+></script>
+
+</div>
+
+</body>
+
+</html>
